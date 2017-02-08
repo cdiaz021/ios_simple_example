@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  androidvsios
+
+  Created by Carlos Diaz Moreno on 8/2/17.
+  Copyright © 2017 Carlos Diaz Moreno. All rights reserved.
+*/
+"Borrar" = "Borrar";
+"¿Desea borrar el elemento?" = "¿Desea borrar el elemento?";

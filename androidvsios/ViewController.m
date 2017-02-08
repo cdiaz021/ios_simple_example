@@ -61,14 +61,14 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
     UIAlertController* alert = [UIAlertController
-                                alertControllerWithTitle:@"Borrar"
-                                message:@"¿Desea borrar el elemento?"
+                                alertControllerWithTitle:NSLocalizedString(@"Borrar", nil)
+                                message:NSLocalizedString(@"¿Desea borrar el elemento?",nil)
                                 preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction* okAction = [UIAlertAction
                                     actionWithTitle:@"OK" style:UIAlertActionStyleDefault
                                     handler:^(UIAlertAction * action) {
                                         [_array removeObjectAtIndex:indexPath.row];
-                                        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+                                        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationRight];
                                     }];
     UIAlertAction* cancelAction = [UIAlertAction
                                     actionWithTitle:@"Cancel" style:UIAlertActionStyleDefault

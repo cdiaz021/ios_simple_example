@@ -16,6 +16,7 @@
 		D3EDD4C71E4B2C2400F6D033 /* androidvsiosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EDD4C61E4B2C2400F6D033 /* androidvsiosTests.m */; };
 		D3EDD4D21E4B2C2400F6D033 /* androidvsiosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EDD4D11E4B2C2400F6D033 /* androidvsiosUITests.m */; };
 		D3EDD4E01E4B325B00F6D033 /* icono-apple.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EDD4DF1E4B325B00F6D033 /* icono-apple.png */; };
+		D3EDD4E31E4B4FB800F6D033 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3EDD4E51E4B4FB800F6D033 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,9 @@
 		D3EDD4D11E4B2C2400F6D033 /* androidvsiosUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = androidvsiosUITests.m; sourceTree = "<group>"; };
 		D3EDD4D31E4B2C2400F6D033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3EDD4DF1E4B325B00F6D033 /* icono-apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icono-apple.png"; sourceTree = "<group>"; };
+		D3EDD4E41E4B4FB800F6D033 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D3EDD4E61E4B4FBC00F6D033 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D3EDD4E71E4B4FF800F6D033 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 				D3EDD4DF1E4B325B00F6D033 /* icono-apple.png */,
 				D3EDD4BD1E4B2C2400F6D033 /* Info.plist */,
 				D3EDD4AC1E4B2C2400F6D033 /* Supporting Files */,
+				D3EDD4E51E4B4FB800F6D033 /* Localizable.strings */,
 			);
 			path = androidvsios;
 			sourceTree = "<group>";
@@ -231,6 +236,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = D3EDD4A01E4B2C2400F6D033;
 			productRefGroup = D3EDD4AA1E4B2C2400F6D033 /* Products */;
@@ -249,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3EDD4E31E4B4FB800F6D033 /* Localizable.strings in Resources */,
 				D3EDD4BC1E4B2C2400F6D033 /* LaunchScreen.storyboard in Resources */,
 				D3EDD4E01E4B325B00F6D033 /* icono-apple.png in Resources */,
 				D3EDD4B91E4B2C2400F6D033 /* Assets.xcassets in Resources */,
@@ -331,6 +338,16 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		D3EDD4E51E4B4FB800F6D033 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3EDD4E41E4B4FB800F6D033 /* Base */,
+				D3EDD4E61E4B4FBC00F6D033 /* en */,
+				D3EDD4E71E4B4FF800F6D033 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -338,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -386,6 +404,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
